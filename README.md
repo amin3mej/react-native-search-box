@@ -3,6 +3,7 @@
 - Lightweight, fast, flexible, customizable.
 - Support both iOS/Android devices
 - Support vertical, horizontal layout
+- Support RTL view
 - Shadow invisible by default
 
 ## Install
@@ -125,6 +126,7 @@ class MyScene extends PureComponent {
 ## Props
 
 ```
+    direction: PropTypes.string,
     /**
      * onFocus
      * return a Promise
@@ -221,6 +223,7 @@ class MyScene extends PureComponent {
 
 ## Prop Defaults
 ```
+    direction: 'ltr', // you can use ltr or rtl
     searchIconCollapsedMargin: 25,
     searchIconExpandedMargin: 10,
     placeholderCollapsedMargin: 15,
